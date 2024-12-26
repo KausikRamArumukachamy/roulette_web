@@ -1,0 +1,98 @@
+.Stats {
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Stats-logo {
+    height: 70vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    opacity: 0.3;
+    z-index: 1; /* Ensure the logo has a lower z-index */
+    object-fit: cover;
+    animation: App-logo-spin infinite 20s linear;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
+  .Stats-header {
+    background-color: rgba(206, 88, 79, 0.9);
+    min-height: 100vh;
+    position: relative;
+    z-index: 2; /* Ensure the header background is behind inputs */
+  }
+  
+  .inputs-container {
+    position: absolute; /* Match positioning style with the logo */
+    z-index: 2; /* Keep it above the logo */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensure perfect centering */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center content vertically inside the container */
+    width: auto; /* Adjust width as needed */
+  }
+  
+  .number-inputs {
+    margin-bottom: 15px;
+    z-index: 2; /* Higher than the background and logo */
+  }
+  
+  .input-label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    padding: 1px 2.5px;
+    border-radius: 5px;
+    position: relative; /* Required for z-index to work */
+    z-index: 2;
+  }
+  
+  .number-inputs input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.9);
+    position: relative; /* Required for z-index to work */
+    z-index: 2;
+  }
+  
+  .number-inputs input.invalid {
+    border: 2px solid red;
+  }
+  
+  .ok-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #282c34;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative; /* Required for z-index to work */
+    z-index: 2; /* Ensure button is above the logo */
+  }
+  
+  .ok-button:hover {
+    background-color: #444;
+  }
+  

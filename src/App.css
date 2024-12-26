@@ -1,0 +1,97 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 70vmin;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ce584f;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+.App {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  min-height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-color: #ce584f; /* Background color */
+  position: relative; /* Ensure relative positioning */
+}
+
+.App-logo {
+  height: 70vmin;
+  pointer-events: none;
+  opacity: 1;
+  position: absolute; /* Absolute positioning to help with centering */
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, -50%); /* Adjust position to be truly centered */
+  z-index: 1; /* Ensure the logo stays behind the text */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.App-text {
+  margin-top: 100px; /* Adds space below the logo */
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  z-index: 2; /* Ensure text is in front of the logo */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 10px 20px; /* Add padding to the text */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
