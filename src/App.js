@@ -1,27 +1,3 @@
-// import './App.css';
-// import rouletteImage from './roulette_img.png';
-// import { useNavigate } from 'react-router-dom';
-
-// function App() {
-//   const handleScreenclick = () => {
-//     alert('Screen Touched!');
-//   }
-
-//   return (
-
-//     <div className="App" onClick={handleScreenclick}>
-//       <header className="App-header">
-//         <img src={rouletteImage} className="App-logo" alt="roulette logo" />
-//         <p>
-//           Touch to continue
-//         </p>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
 import './App.css';
 import rouletteImage from './roulette_img.png';
 import { useNavigate } from 'react-router-dom';
